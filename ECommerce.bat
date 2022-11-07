@@ -1,5 +1,7 @@
 cd API
-start dotnet watch run
+wt -w 0 dotnet watch run
 cd..
 cd client
-start ng s
+REM wt -w 0 -d . powershell "ng s"
+wt -w 0 -d . cmd /k "ng s"
+pause
