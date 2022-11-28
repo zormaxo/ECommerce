@@ -1,5 +1,5 @@
 cd API
-wt -w 0 dotnet watch run
+wt -w 0 dotnet watch run a
 cd..
 cd client
 REM wt -w 0 -d . powershell "ng s"
