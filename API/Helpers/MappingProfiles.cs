@@ -19,6 +19,8 @@ namespace API.Helpers
                 .ForMember(d => d.ProductType, MyMethod)
                 .ForMember(d => d.PictureUrl, o => o.MapFrom<ProductUrlResolver>());
             CreateMap<Address, AddressDto>().ReverseMap();
+            CreateMap<CustomerBasketDto, CustomerBasket>();
+            CreateMap<BasketItemDto, BasketItem>();
         }
 
         public void MyMethod(IMemberConfigurationExpression<Product, ProductToReturnDto, string> mem)
